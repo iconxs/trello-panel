@@ -42,15 +42,11 @@
 
   <!-- BARRA DE BOTONES -->
   <div class="bar">
-    <!-- Botón Popup para tu Excel de Google Sheets -->
     <button class="btn btn-green" onclick="openModal('REPORTE DIARIO SVR', 'https://docs.google.com/spreadsheets/d/1l1gG1uenvvIn953fAWBPPwvzKWflzWWqLCoH_Z_K5s0/preview')">📊 REPORTE DIARIO SVR</button>
-    
-    <!-- Puedes agregar más botones como estos si lo necesitas -->
-    <a href="https://mail.google.com" target="_blank" class="btn">✉️ Gmail</a>
   </div>
 
   <!-- TABLERO DE TRELLO -->
-  <iframe class="trello-frame" src="https://trello.com/b/1TmQvZOd/pabloinf.html"></iframe>
+  <iframe class="trello-frame" src="https://trello.com/b/1TmQvZOd/pabloinf"></iframe>
 
   <!-- VENTANA EMERGENTE (POPUP) -->
   <div id="driveModal" class="modal-overlay">
@@ -75,10 +71,9 @@
 
     function closeModal() {
       document.getElementById('driveModal').style.display = 'none';
-      document.getElementById('driveFrame').src = ''; // Limpia el iframe al cerrar
+      document.getElementById('driveFrame').src = '';
     }
 
-    // Cerrar al presionar la tecla ESC
     document.addEventListener('keydown', function(event) {
       if (event.key === "Escape") { closeModal(); }
     });
