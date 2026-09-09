@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Panel de Control</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0f172a; padding: 15px; color: white; }
+    
+    /* Barra de botones */
+    .bar { display: flex; gap: 10px; margin-bottom: 15px; flex-wrap: wrap; align-items: center; }
+    .btn { padding: 10px 16px; background: #2563eb; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 14px; transition: background 0.2s; }
+    .btn:hover { background: #1d4ed8; }
+    
+    /* Ventana del tablero */
+    iframe { width: 100%; height: 85vh; border: none; border-radius: 8px; background: white; }
+  </style>
+</head>
+<body>
+
+  <!-- TUS BOTONES AQUÍ -->
+  <div class="bar">
+    <a href="https://drive.google.com" target="_blank" class="btn">📁 Google Drive</a>
+    <a href="https://mail.google.com" target="_blank" class="btn">✉️ Gmail</a>
+    <a href="https://tu-sitio.com" target="_blank" class="btn">🚀 Enlace Útil</a>
+  </div>
+
+  <!-- TU TABLERO DE TRELLO INCRUSTADO -->
+  <iframe src="https://trello.com/b/1TmQvZOd.html"></iframe>
+
+</body>
+</html>
