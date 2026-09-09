@@ -10,7 +10,7 @@
     
     /* Barra de botones */
     .bar { display: flex; gap: 10px; margin-bottom: 15px; flex-wrap: wrap; align-items: center; }
-    .btn { padding: 10px 16px; background: #2563eb; color: white; border: none; border-radius: 6px; font-weight: bold; font-size: 14px; cursor: pointer; text-decoration: none; display: inline-block; transition: background 0.2s; }
+    .btn { padding: 10px 16px; background: #2563eb; color: white; border: none; border-radius: 6px; font-weight: bold; font-size: 14px; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: background 0.2s; }
     .btn:hover { background: #1d4ed8; }
     .btn-green { background: #059669; }
     .btn-green:hover { background: #047857; }
@@ -43,10 +43,11 @@
   <!-- BARRA DE BOTONES -->
   <div class="bar">
     <button class="btn btn-green" onclick="openModal('REPORTE DIARIO SVR', 'https://docs.google.com/spreadsheets/d/1l1gG1uenvvIn953fAWBPPwvzKWflzWWqLCoH_Z_K5s0/preview')">📊 REPORTE DIARIO SVR</button>
+    <a href="https://mail.google.com" target="_blank" class="btn">✉️ Gmail</a>
   </div>
 
-  <!-- TABLERO DE TRELLO -->
-  <iframe class="trello-frame" src="https://trello.com/b/1TmQvZOd/pabloinf"></iframe>
+  <!-- TABLERO DE TRELLO (Con .html al final para autorizar el iframe) -->
+  <iframe class="trello-frame" src="https://trello.com/b/1TmQvZOd.html"></iframe>
 
   <!-- VENTANA EMERGENTE (POPUP) -->
   <div id="driveModal" class="modal-overlay">
