@@ -14,6 +14,8 @@
     .btn:hover { background: #1d4ed8; }
     .btn-green { background: #059669; }
     .btn-green:hover { background: #047857; }
+    .btn-purple { background: #7c3aed; }
+    .btn-purple:hover { background: #6d28d9; }
     
     /* Ventana del tablero (Intacta como en tu código funcional) */
     iframe { width: 100%; height: 85vh; border: none; border-radius: 8px; background: white; }
@@ -42,7 +44,10 @@
 
   <!-- TUS BOTONES -->
   <div class="bar">
-    <!-- Botón con POPUP -->
+    <!-- Botón para el PopUp de Looker Studio -->
+    <button class="btn btn-purple" onclick="abrirPopup('DASHBOARD TRELLO', 'https://datastudio.google.com/embed/reporting/6bdf0f27-6a30-4ce9-a07a-e4e47be123cc/page/xXU9F')">📈 Dashboard</button>
+
+    <!-- Tu botón anterior de Google Sheets -->
     <button class="btn btn-green" onclick="abrirPopup('REPORTE DIARIO SVR', 'https://docs.google.com/spreadsheets/d/1l1gG1uenvvIn953fAWBPPwvzKWflzWWqLCoH_Z_K5s0/preview')">📊 REPORTE DIARIO SVR</button>
 
     <!-- Botones tradicionales -->
